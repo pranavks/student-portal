@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+header {
+    background-color: #3aafa9;
+    color: #17252a;
+}
+header ul {
+    list-style-type: none;
+}
+header li {
+    display: inline-block;
+    margin: 15px 30px;
+}
+#logo {
+    background-color: #17252a;
+    color: #def2f1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav_wrapper {
+    background-color: #2b7a78;
+    width: 100%;
+    height: auto;
+}
+nav {
+    padding: 5px 0 5px 600px;
+    background-color: #2b7a78;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 0;
+}
+nav>a, nav>div {
+    margin-right: 20px;
+    color: #def2f1;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+.dropdown:hover .dropmenu {
+    display: block;
+}
+.dropbutton {
+    background-color: #2b7a78;
+    color: #def2f1;
+    font-size: inherit;
+    border: none;
+    padding: 8px 0;
+}
+.dropmenu {
+    display: none;
+    background-color: #2b7a78;
+    position: absolute;
+    width: 120px;
+    text-align: center;
+}
+.dropmenu a {
+    display: block;
+    padding: 10px;
+    color: #def2f1;
+}
+
+
+.main_div {
+    height: 450px;
+    width: 100%;
+    background-image: url('images/school.jpg');
+    background-size: cover;
+}
+
+
+.support_wrapper {
+    background-color: #3aafa9;
+    width: 100%;
+    height: auto;
+}
+.support_div {
+    float: right;
+    margin: 5px 0;
+}
+.support_div a {
+    text-decoration: none;
+}
+.support_div div {
+    display: inline-block;
+    margin-right: 80px;
+    border: 1px solid #2b7a78;
+    border-radius: 15px;
+    padding: 15px;
+    width: 200px;
+    background-color: #2b7a78;
+    color: #def2f1;
+    text-align: center;
+}
+.support_div #div1 {
+    border: 2px solid #def2f1;
+}
+
+
+.extra_div {
+    width: 100%;
+    padding: 25px;
+    background-color: #3aafa9;
+    clear: right;
+    background-image: linear-gradient(#3aafa9, #fff);
+}
+
+
+.username {
+    float: right;
+    margin: 30px 160px 30px 0;
+}
+.username #user {
+    border: 1px solid black;
+    background-color: rgba(58, 175, 169, 0.5);
+    padding: 3px;
+    font-size: 14px;
+}
+
+
+.welcome {
+    clear: right;
+    margin: 0 100px;
+    position: relative;
+}
+.welcome img {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+}
+.welcome .tooltip {
+    position: relative;
+}
+.welcome .tooltiptext {
+    position: absolute;
+    visibility: hidden;
+    width: 160px;
+    left: 200%;
+    bottom: 20px;
+}
+.welcome .tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+.choose_best {
+    display: flex;
+    margin: 20px 100px 80px 100px;
+}
+.choose_best h4 {
+    color: #2b7a78;
+}
+.best_school, .best_template {
+    flex-grow: 1;
+    border: 1px solid black;
+    padding: 15px 60px 50px 20px;
+    position: relative;
+}
+.best_school #school1, .best_template #template1 {
+    margin-bottom: 20px;
+}
+.best_school #submit {
+    position: absolute;
+    bottom: 35px;
+    right: 130px;
+    background-color: rgba(58, 175, 169, 0.5);
+    border-style: none;
+    border: 1px solid black;
+    padding: 5px;
+}
+.best_template #settings {
+    position: absolute;
+    bottom: 35px;
+    right: 130px;
+    background-color: rgba(58, 175, 169, 0.5);
+    border-style: none;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+.students_list {
+    border: 1px solid black;
+    margin: 0 100px;
+    padding: 15px 150px 40px 130px;
+}
+.students_list #add_student {
+    border: 1px solid black;
+    background-color: rgba(58, 175, 169, 0.5);;
+    padding: 5px;
+    margin: 10px 0;
+}
+.students_list table {
+    width: 100%;
+    max-width: 725px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.students_list th {
+    background-color: #2b7a78;
+    color: #def2f1;
+}
+.students_list th, .students_list td {
+    border: 1px solid black;
+    padding: 5px;
+}
+.students_list table button {
+    background-color: rgba(58, 175, 169, 0.5);
+    padding: 5px;
+    border: 1px solid black;
+    margin: 1px 3px;
+}
+.students_list table td:last-child {
+    text-align: center;
+}
+
+
+footer {
+    background-color: #3aafa9;
+    color: #17252a;
+    padding: 15px 30px;
+}
+footer ul {
+    list-style-type: none;
+}
+footer li {
+    display: inline;
+    margin-right: 100px;
+}
+
+
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    header li {
+        margin: 15px;
+    }
+    nav {
+        float: right;
+        padding: 5px 20px;
+    }
+    .main_div {
+        clear: right;
+    }
+
+    .support_div div {
+        margin-right: 40px;
+    }
+    .students_list {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    footer ul {
+        text-align: center;
+    }
+    footer li {
+        display: block;
+        margin: 2px 0px;
+    }
+
+}
+
+@media only screen and (max-width : 767px) {
+    header li {
+        margin: 10px;
+    }
+    nav {
+        padding: 0;
+        text-align: center;
+    }
+    nav a, nav div {
+        display: block;
+    }
+    .main_div {
+        background-image: url('images/school\ mini.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .support_div {
+        margin-top: 0;
+        padding-top: 5px;
+    }
+    .support_div div {
+        display: block;
+        margin: 5px auto;
+    }
+    .support_div div:first-child {
+        margin-top: 0;
+    }
+    .support_div {
+        float: none;
+    }
+    .username {
+        margin-right: 20px;
+    }
+    .welcome, .choose_best, .students_list {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .best_school, .best_template {
+        padding: 20px;
+    }
+    .best_school #submit, .best_template #settings{
+        position: static;
+        display: table;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .students_list {
+        padding: 5px;
+    }
+    .students_list .table_responsive {
+        overflow-x: auto;
+    }
+    footer ul {
+        text-align: center;
+    }
+    footer li {
+        display: block;
+        margin: 5px 0px;
+    }
+}
