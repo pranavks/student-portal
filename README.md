@@ -5,3 +5,5 @@ A responsive UI which includes a table where student information can be dynamica
 Made using HTML, CSS & JavaScript 
 
 https://pranavks.github.io/student-portal/
+
+![Screenshot](https://raw.githubusercontent.com/pranavks/student-portal/blob/master/images/student-portal.jpg)
