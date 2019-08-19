@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<header>
+    <ul>
+        <a href="#"><li id="logo">ABC College</li></a>
+        <li>+91 944671387</li>
+    </ul>
+</header>
+
+<div class="nav_wrapper clearfix">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <div class="dropdown">
+            <button class="dropbutton">Departments
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropmenu">
+                <a href="#">Computer</a>
+                <a href="#">Mechanical</a>
+                <a href="#">Civil</a>
+                <a href="#">Electrical</a>
+                <a href="#">Electronics</a>
+            </div>
+        </div>
+        <a href="#">Contact Us</a>
+    </nav>
+</div>
+
+<div class="main_div">
+    &nbsp;
+</div>
+
+<div class="support_wrapper clearfix">
+    <div class="support_div">
+        <a href="#"><div id="div1">Student Portal</div></a>
+        <a href="#"><div id="div2">Teachers Portal</div></a>
+        <a href="#"><div id="div3">Guest Portal</div></a>
+    </div>
+</div>
+
+<div class="extra_div">&nbsp;</div>
+
+<div class="username">
+    Logged in as
+    <span id="user">User A</span>
+</div>
+
+<div>
+    <div class="welcome">
+        <span>Welcome Student&nbsp;&nbsp;</span>
+        <span class="tooltip">
+            <img src="images/info.png" alt="info">
+            <span class="tooltiptext">Fill the following</span>
+        </span>
+    </div>
+    <div class="choose_best">
+        <div class="best_school">
+            <h4>Apply for Scholarships</h4><br>
+            <input type="checkbox" id="school1" name="school" value="A">
+            <label for="school1">XYZ Scholarship</label><br>
+            <input type="checkbox" id="school2" name="school" value="B">
+            <label for="school2">HIJ Scholarship</label>
+            <input id="submit" type="submit">
+        </div>
+        <div class="best_template">
+            <h4>Register for Sports</h4><br>
+            <input type="radio" id="template1" name="template" value="A">
+            <label for="template1">Football</label><br>
+            <input type="radio" id="template2" name="template" value="B">
+            <label for="template2">Cricket</label>
+            <button id="settings">Submit</button>
+        </div>
+    </div>
+</div>
+
+<div class="students_list">
+    <p>Students</p>
+    <button id="add_student" onclick="addRow()">Add</button>
+    <div class="table_responsive">
+        <table id="table">
+            <tr>
+                <th>Phone No.</th>
+                <th>Email</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Manage</th>
+            </tr>
+            <tr id="row1">
+                <td id="phone_row1">+91944671387</td>
+                <td id="email_row1">abc@yahoo.com</td>
+                <td id="name_row1">Joy</td>
+                <td id="subject_row1">Science</td>
+                <td id="manage_row1">
+                    <button id="edit_button1" onclick="editData(1)">Edit</button>
+                    <button id="save_button1" onclick="saveData(1)">Save</button>
+                    <button id="delete" onclick="deleteData(1)">Delete</button>
+                </td>
+            </tr>
+            <tr id="new_row">
+                <td><input type="tel" id="new_phone"></td>
+                <td><input type="email" id="new_email"></td>
+                <td><input type="text" id="new_name"></td>
+                <td><input type="text" id="new_subject"></td>
+                <td><button class="add" onclick="addData()">Add Student</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<footer>
+    <ul>
+        <li>2019 &copy; ABC College, Kochi. All Rights Reserved</li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+    </ul>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
