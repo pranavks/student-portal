@@ -6,4 +6,4 @@ Made using HTML, CSS & JavaScript
 
 https://pranavks.github.io/student-portal/
 
-![Screenshot](https://raw.githubusercontent.com/pranavks/student-portal/blob/master/images/student-portal.jpg)
+![Screenshot](https://raw.githubusercontent.com/pranavks/student-portal/master/images/to/student-portal.jpg)
