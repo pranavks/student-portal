@@ -8,6 +8,6 @@ Check it out here:
 
 https://pranavks.github.io/student-portal/
 
-(Chrome may show a dangerous site warning, please ignoreit. It's just because of the table asking name, email id, etc.)
+(Chrome may show a dangerous site warning, please ignore it. It's just because of the table asking name, email id, etc.)
 
 ![Screenshot](https://github.com/pranavks/student-portal/blob/master/images/student-portal.jpg)
